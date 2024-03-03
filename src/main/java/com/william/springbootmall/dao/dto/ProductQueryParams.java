@@ -10,6 +10,25 @@ public class ProductQueryParams {
     private String orderBy;
     private String sort;
 
+    private Integer limit;
+    private Integer Offset;
+
+    public Integer getLimit() {
+        return limit;
+    }
+
+    public void setLimit(Integer limit) {
+        this.limit = limit;
+    }
+
+    public Integer getOffset() {
+        return Offset;
+    }
+
+    public void setOffset(Integer offset) {
+        Offset = offset;
+    }
+
     public String getOrderBy() {
         return orderBy;
     }
