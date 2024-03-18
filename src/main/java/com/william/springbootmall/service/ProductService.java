@@ -1,8 +1,7 @@
 package com.william.springbootmall.service;
 
-import com.william.springbootmall.constant.ProductCategory;
-import com.william.springbootmall.dao.dto.ProductQueryParams;
-import com.william.springbootmall.dao.dto.ProductRequest;
+import com.william.springbootmall.dto.ProductQueryParams;
+import com.william.springbootmall.dto.ProductRequest;
 import com.william.springbootmall.model.Product;
 
 import java.util.List;

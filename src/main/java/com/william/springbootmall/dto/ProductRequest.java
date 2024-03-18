@@ -1,4 +1,4 @@
-package com.william.springbootmall.dao.dto;
+package com.william.springbootmall.dto;
 
 import com.william.springbootmall.constant.ProductCategory;
 import jakarta.validation.constraints.NotNull;

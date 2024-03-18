@@ -1,7 +1,8 @@
 package com.william.springbootmall.controller;
 
 import com.william.springbootmall.constant.ProductCategory;
-import com.william.springbootmall.dao.dto.*;
+import com.william.springbootmall.dto.ProductQueryParams;
+import com.william.springbootmall.dto.ProductRequest;
 import com.william.springbootmall.model.Product;
 import com.william.springbootmall.service.ProductService;
 import com.william.springbootmall.util.Page;

@@ -1,9 +1,8 @@
 package com.william.springbootmall.dao.impl;
 
-import com.william.springbootmall.constant.ProductCategory;
 import com.william.springbootmall.dao.ProductDao;
-import com.william.springbootmall.dao.dto.ProductQueryParams;
-import com.william.springbootmall.dao.dto.ProductRequest;
+import com.william.springbootmall.dto.ProductQueryParams;
+import com.william.springbootmall.dto.ProductRequest;
 import com.william.springbootmall.model.Product;
 import com.william.springbootmall.rowmapper.ProductRowMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +32,7 @@ public class ProductDaoImpl implements ProductDao {
 
         Map<String, Object> map = new HashMap<>();
 
-        this.addFilteringSql(sql, map, productQueryParams);
+        sql = this.addFilteringSql(sql, map, productQueryParams);
         sql = sql + " ORDER BY " + productQueryParams.getOrderBy() + " " + productQueryParams.getSort();
 
         sql = sql + " LIMIT :limit OFFSET :offset";
