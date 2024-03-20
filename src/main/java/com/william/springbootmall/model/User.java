@@ -8,11 +8,11 @@ import java.util.Date;
 public class User {
 
     private Integer userId;
-    @JsonProperty("e_mail")
+    @JsonProperty("email")
     private String email;
     @JsonIgnore
     private String password;
-    private Date createDate;
+    private Date createdDate;
     private Date lastModifiedDate;
 
     public Integer getUserId() {
@@ -39,12 +39,12 @@ public class User {
         this.password = password;
     }
 
-    public Date getCreateDate() {
-        return createDate;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
     public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
+        this.createdDate = createDate;
     }
 
     public Date getLastModifiedDate() {
